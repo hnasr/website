@@ -1,47 +1,140 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Backend Engineering with Hussein Nasser</title>
-    <style>
-        img {
-            max-width:100%;height:auto;
-        }
-        .center {
-    text-align: center;
-    margin: auto;
-    border: 0px solid black;
-    padding: 10px;
-    }
-    </style>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<title>Backend Engineering with Hussein Nasser</title>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+	<link href="css/bootstrap.min.css" rel="stylesheet"  />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 <body>
-  
-    
-<div class = 'center'>
-<h1>The Backend Engineer Track</h1>
-<p>
-I developed this track to help in your backend journey. Whether you are just getting started in the backend, have some basic knowledge and want to sharpen it, or you are adept in backend fundementals and want some challenging backend topics, I have something for you. The following are three ordered <a href ='https://www.youtube.com/HusseinNasser-software-engineering'>YouTube</a> playlists below, Beginner, Intermediate and Advanced. I think this will help you consume the content at your pace. The levels are assigned based on my personal assessment. The videos are recommended to be consumed in the order of the playlist. Thank you so much for the love and support. <br> -Hussein
-</p>
+	<div id="Header" class="container py-5 text-center">
+		<img id="HeaderPhoto" class="rounded-circle d-block mx-auto mb-4" src="img/hnasr.jpg" />
+		<h1 class="h5 mb-4">
+			👋 Hi,
+			<br>
+			I am <b>Hussein Nasser</b>
+		</h1>
+		<p id="HeaderText" class="mb-4 fs-6 rounded p-3 d-inline-block">
+			I developed this track to help in your backend journey.
+		</p>
+		<div>
+			<a id="HeaderButton" href="#Playlists" class="btn btn-lg btn-light rounded-pill fw-bold mx-auto px-5">
+				💎 Start now!
+			</a>
+		</div>
+	</div>
+	<div id="Playlists">
+		<div class="container py-5">
+			<h2 class="text-center fw-bolder mb-5">🏆 Levels</h2>
+			<div class="Playlist py-5">
+				<div class="row align-items-center">
+					<div class="col-12 col-lg-6 mb-4 mb-lg-0 text-center">
+						<h3>Beginner Backend Engineering</h3>
+						<p>
+							If you are getting started, this playlist will give you the required dose of backend.
+						</p>
+						<a class="btn btn-lg btn-dark rounded-pill px-5" href="https://www.youtube.com/playlist?list=PLQnljOFTspQUNnO4p00ua_C5mKTfldiYT">
+							Get started
+						</a>
+					</div>
+					<div class="col-12 col-lg-6">
+						<div class="PlaylistImage rounded d-flex justify-content-center align-items-center" style="background: url(./img/beginner-backend.png);">
+							<div class="h4 text-white">Beginner</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
-    <br/><br/><h2>👨‍💻 Beginner Backend Engineering</h2><br/>
-<a href = 'https://www.youtube.com/playlist?list=PLQnljOFTspQUNnO4p00ua_C5mKTfldiYT'><img src = 'img/beginner-backend.png' loading='lazy'></a>
+			<div class="Playlist py-5">
+				<div class="row align-items-center flex-column-reverse flex-xl-row">
+					<div class="col-12 col-lg-6">
+						<div class="PlaylistImage rounded d-flex justify-content-center align-items-center" style="background: url(./img/intermediate-backend.png);">
+							<div class="h4 text-white">Intermediate</div>
+						</div>
+					</div>
+					<div class="col-12 col-lg-6 text-center mb-4 mb-lg-0">
+						<h3>Intermediate Backend Engineering</h3>
+						<p>
+							Sharpen your knowledge, learn standards/protocols that runs the world, and build projects along the way.
+						</p>
+						<a class="btn btn-lg btn-dark rounded-pill px-5" href="https://www.youtube.com/playlist?list=PLQnljOFTspQWGuRmwojJ6LiV0ejm6eOcs">
+							Get started
+						</a>
+					</div>
+				</div>
+			</div>
 
+			<div class="Playlist py-5">
+				<div class="row align-items-center">
+					<div class="col-12 col-lg-6 mb-4 mb-lg-0 text-center">
+						<h3>Advanced Backend Engineering</h3>
+						<p>
+							Ready for the boss battle? Learn how to build scalable systems, and understand the architecture that backs large companies. Remember it does not end here, it is continuous learning process!
+						</p>
+						<a class="btn btn-lg btn-dark rounded-pill px-5" href="https://www.youtube.com/playlist?list=PLQnljOFTspQUybacGRk1b_p13dgI-SmcZ">
+							Get started
+						</a>
+					</div>
+					<div class="col-12 col-lg-6">
+						<div class="PlaylistImage rounded d-flex justify-content-center align-items-center" style="background: url(./img/advanced-backend.png);">
+							<div class="h4 text-white">Advanced</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="Footer" class="d-flex justify-content-center align-items-center py-4">
+		<!-- Twitter -->
+		<a href="https://twitter.com/hnasr" class="me-4">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+				<path fill="#3a212c" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+			</svg>
+		</a>
+		<!-- YouTube -->
+		<a href="https://www.youtube.com/HusseinNasser-software-engineering">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+				<path fill="#3a212c" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path>
+			</svg>
+		</a>
+	</div>
+	<script type="text/javascript">
+		const HeaderText = document.getElementById('HeaderText');
 
-<br/><br/><h2>👩‍💻Intermediate Backend Engineering</h2><br/>
-<a href = 'https://www.youtube.com/playlist?list=PLQnljOFTspQWGuRmwojJ6LiV0ejm6eOcs'><img src = 'img/intermediate-backend.png' loading='lazy'></a>
+		const texts = [
+			'I developed this track to help in your backend journey.',
+			'Whether you are just getting started in the backend,',
+			'have some basic knowledge and want to sharpen it,',
+			'or you are adept in backend fundementals and want some challenging backend topics,',
+			'I have something for you. 😉',
+			'The following are three ordered YouTube playlists below, Beginner, Intermediate and Advanced.',
+			'I think this will help you consume the content at your pace.',
+			'The levels are assigned based on my personal assessment.',
+			'The videos are recommended to be consumed in the order of the playlist.',
+			'Thank you so much for the love and support.'
+		];
 
+		let cursor = 1;
 
-<br/><br/><h2>👨🏻‍💻Advanced Backend Engineering</h2><br/>
-<a href = 'https://www.youtube.com/playlist?list=PLQnljOFTspQUybacGRk1b_p13dgI-SmcZ'><img src = 'img/advanced-backend.png' loading='lazy'></a>
+		setInterval(() => {
+			HeaderText.style.animationName = 'fade-out';
+			setTimeout(() => {
+				HeaderText.style.animationName = 'fade-in';
+				HeaderText.innerText = texts[cursor];
+				HeaderText.style.display = 'inline-block';
+			}, 500);
 
-<br/>
-<br/>
-<a href ='https://www.husseinnasser.com/p/about-hussein.html'>Home</a>
-
-</div>
-
-
+			if (cursor === texts.length - 1) {
+				cursor = 0;
+			} else {
+				cursor++;
+			}
+		}, 3000);
+	</script>
 </body>
 </html>

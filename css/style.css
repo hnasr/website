@@ -1,0 +1,126 @@
+/**
+ * Text selection.
+ */
+::selection {
+	text-shadow: none;
+	background: #959cad;
+}
+
+/**
+ * Site's scrollbar.
+ */
+::-webkit-scrollbar {
+	width: .3rem; 
+}
+
+::-webkit-scrollbar-track {
+	background: #353057;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #ffb4d5;
+	border-radius: .3rem;
+}
+
+body {
+	font-family: 'Inter';
+	font-size: 16px;
+
+	background-color: #181433;
+	color: #f7f7fa;
+
+	overflow-x: hidden;
+}
+
+#HeaderPhoto {
+	max-width: 8rem;
+	border: .3rem solid #ffb4d5;
+}
+
+#HeaderText {
+	background-color: #353057;
+	position: relative;
+	opacity: 1;
+	animation-duration: .4s;
+	animation-fill-mode: forwards;
+}
+
+#HeaderText::before {
+	position: absolute;
+	content: '';
+	top: -22px;
+	left: 50%;
+	border: .7rem solid #353057;
+	border-left-color: transparent;
+	border-top-color: transparent;
+	border-right-color: transparent;
+}
+
+#HeaderText a {
+	text-decoration: none;
+	color: #ffb4d5;
+}
+
+#HeaderText a:hover {
+	color: #dc89ad;
+	text-decoration: underline;
+}
+
+#HeaderButton {
+	background-color: #ffb4d5;
+	color: #3a212c;
+	border-color: #ffb4d5;
+}
+
+#Playlists,
+#Footer {
+	background-color: #f3f3f3;
+	color: #3a212c;
+}
+
+.Playlist a {
+	background-color: #3a212c;
+	color: #fff;
+}
+
+.PlaylistImage {
+	width: 384px;
+	max-width: 100%;
+	height: 256px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+}
+
+#Footer svg {
+	height: 32px;
+}
+
+#Footer a {
+	transition: opacity .2s ease-in-out;
+}
+
+#Footer a:hover {
+	opacity: .7;
+}
+
+@keyframes fade-in {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fade-out {
+	from {
+		opacity: 1;
+	}
+
+	to {
+		opacity: 0;
+	}
+}
